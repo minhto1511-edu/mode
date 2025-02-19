@@ -1,0 +1,128 @@
+/* Đặt lại một số mặc định cho các thẻ */
+body, h2, table, button, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Đặt kiểu cho container của trang giỏ hàng */
+.cart-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của giỏ hàng */
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Định dạng bảng giỏ hàng */
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+
+#cart-table th, #cart-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#cart-table th {
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+#cart-table td {
+    background-color: #fff;
+}
+
+/* Định dạng cho tổng giá */
+#total-price {
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Định dạng cho các nút */
+button, .view-cart {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+button:hover, .view-cart:hover {
+    background-color: #e65c50;
+}
+
+#clear-cart {
+    background-color: #e74c3c;
+}
+
+#clear-cart:hover {
+    background-color: #c0392b;
+}
+
+/* Định dạng cho liên kết "Tiếp tục mua sắm" */
+.view-cart {
+    background-color: #3498db;
+}
+
+.view-cart:hover {
+    background-color: #2980b9;
+}
+
+/* Điều chỉnh cho phần header và footer để không ảnh hưởng đến giỏ hàng */
+.header_section, .footer_section {
+    background-color: #333;
+    color: #fff;
+}
+
+.header_section a, .footer_section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header_section a:hover, .footer_section a:hover {
+    color: #ff6f61;
+}
+
+.footer_section .footer_social a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #222831;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 0 2.5px;
+    font-size: 18px;
+}
+
+.footer_section .footer_social a:hover {
+    color: #ffbe33;
+}
